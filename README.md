@@ -29,7 +29,7 @@ Write code to tell the difference between an Apple and an Orange.
 Supervised learning: the act of creating classifiers
     ... think of a classifier as a box of rules.
 
-![trainingData.png](trainingData.png)
+![trainingData.png](images/trainingData.png)
 
 
 
@@ -301,7 +301,7 @@ graph[0].write_pdf("iris.pdf")
 ```
 
 Output from cell above:
-![outputViz.png](outputViz.png)
+![outputViz.png](images/outputViz.png)
 
 
 ```python
@@ -443,20 +443,20 @@ print(accuracy_score(y_test, predictions))
 *In supervised learning we do NOT want to write this function.
     ... we want an algorithm to learn it from training data.</pre>
 
-![toysData.png](toysData.png)
+![toysData.png](images/toysData.png)
 
 Pretend you want to distinguish between the red and green dots.
 - Just use 2 features: X and Y coordinate of the dot.
 
-![toysDataPredict.png](toysDataPredict.png)
+![toysDataPredict.png](images/toysDataPredict.png)
 How can we predict these dots which were not in our training data.
 
-![toysDataPredictLine.png](toysDataPredictLine.png)
+![toysDataPredictLine.png](images/toysDataPredictLine.png)
 Let's draw a line and say all dots to either side are red or green.
 
 Approach: Use training data to adjust the parameters of the model.
 
-![toysDataPredictLineMB.png](toysDataPredictLineMB.png)
+![toysDataPredictLineMB.png](images/toysDataPredictLineMB.png)
 By adjusting the parameters of m and b, we can move the line as we learn the correct parameters.
 
 Important: As we introduce each new dot, we can adjust the parameters of a model. 
@@ -524,15 +524,15 @@ print(accuracy_score(y_test, predictions))
 
 In the example above, we acheive an accuracy of ~30%... let's try to improve upon this...
 
-![Knearest.png](Knearest.png)
+![Knearest.png](images/Knearest.png)
 
 Let's use the idea of utilizing the color of the nearest neighbor, or neighbors, to determine the color.
 ... use the formula for euclidean distance to find the nearest neighbor.
 
-![euclidean.png](euclidean.png)
+![euclidean.png](images/euclidean.png)
 The distance that we compute is just the length of the hypotenuse.
 
-![multiFeature_multiDimension.png](multiFeature_multiDimension.png)
+![multiFeature_multiDimension.png](images/multiFeature_multiDimension.png)
 
 If we have 4 or more features, we have a hybrid cube and visualization becomes difficult, but the Euclidean distance works in the same way.
 
@@ -645,7 +645,7 @@ tf.__version__
 
 
 
-<img src="neuralNetwork.jpg" alt="Drawing" style="width: 450px;"/>
+<img src="images/neuralNetwork.jpg" alt="Drawing" style="width: 450px;"/>
 
 
 ```python
@@ -744,11 +744,11 @@ plt.show()
 ```
 
 
-![png](output_6_0.png)
+![png](images/output_6_0.png)
 
 
 
-![png](output_6_1.png)
+![png](images/output_6_1.png)
 
 
 
@@ -776,7 +776,7 @@ print(x_train[0])
 ```
 
 
-![png](output_7_0.png)
+![png](images/output_7_0.png)
 
 
     [[0.         0.         0.         0.         0.         0.
@@ -1059,10 +1059,4 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
-
-
-
-```python
-
-```
+![png](images/output_15_0.png)
